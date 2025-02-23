@@ -1,60 +1,41 @@
-![detecção-objetos-banner](https://github.com/git-jr/3648-Android-MLKit-Object-Detection/assets/35709152/364eac0f-4f3a-4474-bec4-2b05f6db2ac4)
+![detecção-objetos-banner](https://github.com/IagoAntunes/MLKitObjectDetection/blob/master/app/src/main/res/drawable/github/object_detection_cover.png)
 
 # AI Found 
-O protótipo de aplicativo de compras que lista uma série de produtos com imagem, descrição, preço e permite adicioná-los ao carrinho. Graças ao reconhecimento de objetos é possível pesquisar por produtos apenas apontando a câmera do Android e o que for identificado vai ser buscado na base de dados do App. 
+The shopping app prototype that lists a series of products with image, description, price and allows you to add them to the cart. Thanks to object recognition, it is possible to search for products just by pointing the Android camera and whatever is identified will be searched for in the App's database.
 
 
-## 🔨 Funcionalidades do projeto
+## 🔨 Project features
 https://github.com/git-jr/3648-Android-MLKit-Object-Detection/assets/35709152/6996f637-7b22-4ca2-a6a4-b1758096c038
 
-### ✨ Detecção de objetos
-- Ao abrir a busca de produtos, a câmera passa os frames para análise do detector em tempo real, permitindo a análise por parte do modelo. 
-- Cada frame é analisado em busca de informações através do modelo em uso (padrão ou customizado com TensorFlow Lite) 
-- Quando um produto é identificado pelo modelo, uma sobreposição é exibida no preview da câmera nas exatas coordenadas do objeto em questão. 
-- O produto detectado é buscado na base dados e exibido em tela automaticamente, permitindo sua adição ao carrinho de compras 
+### ✨ Object detection
+- When opening the product search, the camera passes the frames to the detector for analysis in real time, allowing analysis by the model. 
+- Each frame is analyzed for information through the model in use (standard or customized with TensorFlow Lite) 
+- When a product is identified by the model, an overlay is displayed in the camera preview at the exact coordinates of the object in question. 
+- The detected product is searched for in the database and displayed on the screen automatically, allowing it to be added to the shopping cart
   
-### 📱Telas
-- Lista inicial: produtos disponíveis para compra
-- Detalhes: informações como preço e descrição além da possibilidade de adição ao carrinho. 
-- Carrinho: lista de todos produtos adicionados via tela de detalhes ou detecção da câmera.
+### 📱Screens
+- Home list: products available for purchase
+- Details: information such as price and description in addition to the possibility of adding it to the cart. 
+- Cart: list of all products added via details screen or camera detection.
 
+## ✔️ Techniques and technologies used
 
+The techniques and technologies used for this are:
 
-## ✔️ Técnicas e tecnologias utilizadas
+- `Jetpack Compose`: Modern toolkit for creating UIs on mobile devices
+- `Kotlin`: programming language
+- `Gradle Version Catalogs`: new way to manage plugins and dependencies in Android projects
+- `Material Design 3`: design pattern recommended by Google for creating modern UIs
+- `Hilt`: dependency injection
+- `Navigating with Compose`: navigation between composables and screens
+- `Viewmodel, states and flow`: management of states and control of events triggered by Google model detections
+- `ML Kit Object Detection`: library to detect and extract information about objects in real time using the device camera
+- `TensorFlow Lite Models`: set of pre-trained and optimized models to run efficiently on mobile devices.
+- `Teachable Machine`: Platform that allows you to train machine learning models easily, without the need to write code. Allows users to create custom models for object recognition, image classification and more, with an intuitive and user-friendly interface.
+- `CameraX`: Jetpack library that makes it easy to integrate camera functionality into Android apps, abstracting the complexity of the Android Camera API and offering a simple interface for capturing photos and video
+- `CameraAnalyzer`: component used with CameraX to analyze video frames in real time, allowing the implementation of detection features that require frame-by-frame processing.
 
-As técnicas e tecnologias utilizadas pra isso são:
+## Social
+[Linkedin](https://www.linkedin.com/in/iagoaferreira/)
 
-- `Jetpack Compose`: kit de ferramentas moderno para criar IUs em dispositivos móveis
-- `Kotlin`: linguagem de programação
-- `Gradle Version Catalogs`: nova forma de gerenciar plugins e dependências em projetos Android
-- `Material Design 3`: padrão de design recomendado pela google para criação de UI modernas
-- `Hilt`: injeção de dependências
-- `Navigating with Compose`: navegação entre composables e telas
-- `Viewmodel, states e flow`: gerenciamento de estados da e controle dos eventos disparados pelas detecções do modelo da Google
-- `ML Kit Object Detection`: biblioteca para detectar e extrair informações sobre objetos em tempo real usando a câmera do dispositivo
-- `TensorFlow Lite Models`: conjunto de modelos pré-treinados e otimizados para executar em dispositivos móveis de forma eficiente.
-- `Teachable Machine`: Plataforma que permite treinar modelos de aprendizado de máquina com facilidade, sem a necessidade de escrever código. Permite aos usuários criar modelos personalizados para reconhecimento de objetos, classificação de imagens e muito mais, com uma interface intuitiva e amigável.
-- `CameraX`: biblioteca do Jetpack que facilita a integração de funcionalidades de câmera em aplicativos Android, abstraindo a complexidade da API de câmera do Android e oferecendo uma interface simples para captura de fotos e vídeo
-- `CameraAnalyzer`: componente utilizado junto ao CameraX para analisar frames de vídeo em tempo real, permitindo a implementação de funcionalidades de detecção que requeiram processamento frame a frame.
-
-
-## 📁 Acesso ao projeto
-
-- Versão inicial: Veja o [código fonte][codigo-inicial] ou [baixe o projeto][download-inicial]
-- Versão final: Veja o [código fonte][codigo-final] ou [baixe o projeto][download-final]
-
-## 🛠️ Abrir e rodar o projeto
-Após baixar o projeto, você pode abri-lo com o Android Studio. Para isso, na tela de launcher clique em:
-
-“Open” (ou alguma opção similar), procure o local onde o projeto está e o selecione (caso o projeto seja baixado via zip, é necessário extraí-lo antes de procurá-lo). Por fim, clique em “OK” o Android Studio deve executar algumas tasks do Gradle para configurar o projeto, aguarde até finalizar. Ao finalizar as tasks, você pode executar o App 🏆
-
-
-## 📚 Mais informações do curso
-
-Gostou do projeto e quer conhecer mais? Você pode [acessar o curso](https://www.alura.com.br/curso-online-android-ia-usando-camera-detectar-objetos-machine-learning) que desenvolve o projeto desde o começo!
-
-[codigo-inicial]: https://github.com/alura-cursos/3648-Android-MLKit-Object-Detection/commits/projeto-inicial/
-[download-inicial]: https://github.com/alura-cursos/3648-Android-MLKit-Object-Detection/archive/refs/heads/projeto-inicial.zip
-
-[codigo-final]: https://github.com/alura-cursos/3648-Android-MLKit-Object-Detection/commits/aula-5/
-[download-final]: https://github.com/alura-cursos/3648-Android-MLKit-Object-Detection/archive/refs/heads/aula-5.zip
+[Portfólio](https://iagoferreira.web.app/)
